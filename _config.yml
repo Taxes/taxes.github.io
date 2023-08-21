@@ -39,6 +39,9 @@ titles_from_headings:
   enabled:     true
   strip_title: true
   collections: false
+  
+# Google Analytics
+google_analytics: G-SSK36BBBM5
 
 # Exclude from processing.
 # The following items will not be processed, by default.
