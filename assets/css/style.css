@@ -1,0 +1,21 @@
+body {
+font-family: Helvetica, arial, sans-serif;
+padding-top: 10px;
+padding-bottom: 10px;
+color: #444;
+background-color: #EEE;
+margin: 40px auto;
+max-width: 650px;
+line-height: 1.6em;
+font-size: 18px;
+padding: 0;
+}
+
+/** Blockquotes */
+blockquote {
+color: #828282;
+border-left: 4px solid #e8e8e8;
+padding-left: 15px;
+letter-spacing: -0.0px;
+margin-left: 15px;
+}
