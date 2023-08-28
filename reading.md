@@ -4,7 +4,7 @@ A list of books that I have read, am reading, or would like to read, in no parti
 
 Standard disclaimer that the presence of a book on this list is not necessarily an endorsement of any ideas contained within said book. Non-standard disclaimer that the presence of a book on this list probably signals that it's pretty interesting.
 
-### Miscellaneous
+## Miscellaneous
 * Keith Johnstone - Impro: Improvisation and the Theatre
 * Hamilton Gregory - McNamara's Folly
 * Douglas Hofstadter - Godel, Escher, Bach: an Eternal Golden Braid
@@ -32,7 +32,7 @@ Standard disclaimer that the presence of a book on this list is not necessarily 
 * Fredrik deBoer - The Cult of Smart
 * Marcel Proust - Remembrance of Things Past
 
-### Tangentially related
+## Tangentially related
 * James Scott - Seeing Like a State
 * Michael Keen, Joel Slembrod - Rebellion, Rascals, and Revenue
 * Dan Moller - Governing Least
@@ -49,7 +49,7 @@ Standard disclaimer that the presence of a book on this list is not necessarily 
 * Annie Duke - Thinking in Bets
 * Michael Lewis - Liar's Poker
 
-### Practical
+## Practical
 * Kim Scott - Radical Candor
 * Don Norman - The Design of Everyday Things
 * Ben Horowitz - The Hard Thing About Hard Things
