@@ -1,7 +1,7 @@
 /* Body */
 body {
 font-family: Helvetica, arial, sans-serif;
-color: #444;
+color: #222;
 background-color: #EEE;
 margin: 2.5rem auto;
 max-width: 45rem;
@@ -20,7 +20,7 @@ font-size: 2rem;
 
 /** Blockquotes */
 blockquote {
-color: #828282;
+color: #444;
 border-left: 4px solid #e8e8e8;
 padding-left: 15px;
 letter-spacing: -0.0px;
