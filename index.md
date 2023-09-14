@@ -8,3 +8,4 @@ Sometimes I write about things that are interesting to me.
 * [Make your values less useless.](/values.md)
 * [Everything is trade-offs.](/tradeoffs.md)
 * [Write more, even if it's bad.](/write-bad.md)
+* [The optimal amount of most Bad Things is non-zero.](/optimal.md)
