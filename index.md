@@ -9,3 +9,4 @@ Sometimes I write about things that are interesting to me.
 * [Everything is trade-offs.](/tradeoffs.md)
 * [Write more, even if it's bad.](/write-bad.md)
 * [The optimal amount of most Bad Things is non-zero.](/optimal.md)
+* [Building a Payments Product: Introduction](/building-payments-product-intro.md)
