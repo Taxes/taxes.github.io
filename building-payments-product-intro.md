@@ -8,7 +8,7 @@ I spent a few years as a product manager at a large bank. One of my major projec
 
 ## Some basic terminology
 
-If corporations paying their customers (or in payments lingo, a B2C or business-to-consumer payment, crucially distinct from a C2B payment flowing in the other direction) is not intuitive, join the club. You, like most consumers, are almost certainly a payor (a payment sender) an order of magnitude more frequently than you are a payee (a payment recipient). A few common examples of a B2C payment flow are:
+If corporations paying their customers (or in payments lingo, a B2C or business-to-consumer payment, crucially distinct from a C2B payment flowing in the other direction) is not intuitive, join the club. You, like most consumers, almost certainly act as a payor (a payment sender) several times as frequently as you act as a payee (a payment recipient). A few common examples of a B2C payment flow are:
 * Payroll - whether you're an airline pilot or a rideshare driver, your employer need to be able to pay you for work done.
 * Refunds - if you return a purchase to a merchant, they need a way to refund your money.
 * Insurance claims - if your apartment floods, your insurance provider needs a way to pay out on your insurance claim.
