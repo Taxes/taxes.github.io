@@ -6,8 +6,9 @@ My interests lie primarily at the intersection of markets and technology.
 I enjoy learning about and designing the financial infrastructure that helps people discover, trade with, and pay one another.
 I want to make better products that increase marketplace efficiency and equip people to make better choices by providing fair playing fields, transparent rules, and competitive options.
 
-I'm currently working as a product manager on multi-sided investment marketplaces at iCapital, with a focus on making alternative investments more accessible to everyday investors.
-I've previously worked on payments and liquidity infrastructure at J.P. Morgan.
+I am currently working on commercial banking intelligence at [Codat](https://codat.io). We help SMBs share their financial data to build stronger relationships with their banks.
+
+I've previously worked as a product manager on multi-sided investment marketplaces at [iCapital](https://icapital.com/), with a focus on making alternative investments more accessible to everyday investors, and on payments and liquidity infrastructure at J.P. Morgan.
 
 ## Non-Work
 
@@ -19,7 +20,7 @@ When I'm not working, you can usually find me doing something related to one (or
 * Board games, especially Eurogames
 * Pondering
 * Ice skating or rollerblading (depending on the season)
-* Puzzles (mostly crosswords, sometimes jigsaws, occasionally math/logic)
+* Puzzles (mostly crosswords, sometimes jigsaws, occasionally math/logic) - currently obsessed with [Bracket City](https://www.theatlantic.com/games/bracket-city/) and [Connections](https://www.nytimes.com/games/connections)
 
 ## Other
 
