@@ -29,3 +29,8 @@ padding-left: 15px;
 letter-spacing: -0.0px;
 margin-left: 15px;
 }
+
+li {
+	display: flex;
+	margin: 0 0 .9em;
+}
