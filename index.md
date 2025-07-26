@@ -5,8 +5,6 @@ You can reach me via [email](mailto:ken@knowingken.com).
 
 Sometimes I write about things that are interesting to me.
 
-|  |  |
-|  |  |
 | 2023-08 | [Make your values less useless.](/values.md)
 | 2023-09 | [Everything is trade-offs.](/tradeoffs.md)
 | 2023-09 | [Write more, even if it's bad.](/write-bad.md) 
@@ -17,6 +15,4 @@ Sometimes I write about things that are interesting to me.
 
 Occasionally I write for work.
 
-| | |
-| | | 
 | 2025-06 | [Why middle market card programs need a new playbook](https://codat.io/blog/middle-market-virtual-card-playbook/)
