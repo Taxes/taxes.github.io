@@ -1,5 +1,5 @@
 # When must we lobotomize ourselves?
-Rhetoragnosia, superhumanly persuasive AI, and arbiters of truth.
+*Rhetoragnosia, superhumanly persuasive AI, and truth.*
 
 > **Rhetor**, from Greek **"rhētōr,"** meaning "speaker" or "orator".
 > 
