@@ -29,3 +29,17 @@ padding-left: 15px;
 letter-spacing: -0.0px;
 margin-left: 15px;
 }
+
+/* Target the UL specifically inside the .post-list div */
+.post-list ul {
+    padding-left: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+/* Styles for LI items *within* the UL inside .post-list */
+.post-list ul li {
+    display: flex;
+    gap: .5em;
+    align-items: baseline;
+}
