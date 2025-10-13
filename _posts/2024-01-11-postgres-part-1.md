@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Postgres performance: how poor statistics affect join strategies"
+slug: postgres-part-1
+date:   2024-01-11
+published: true
+---
+
 # Postgres performance - a deep-dive on how poor statistics affect join strategies.
 
 **Summary:**

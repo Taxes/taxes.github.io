@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Building a payments product: introduction"
+slug: building-payments-product-intro
+date:   2024-01-07
+published: true
+---
+
 # Building a Payments Product: Introduction
 
 Payments are just moving money from one place to another, right? How hard can it be?

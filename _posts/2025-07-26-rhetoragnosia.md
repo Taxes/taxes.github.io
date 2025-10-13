@@ -1,4 +1,13 @@
+---
+layout: post
+title:  "When must we lobotomize ourselves?"
+slug: rhetoragnosia
+date:   2025-07-26
+published: true
+---
+
 # When must we lobotomize ourselves?
+
 *Rhetoragnosia, superhumanly persuasive AI, and truth.*
 
 > **Rhetor**, from Greek **"rhētōr,"** meaning "speaker" or "orator".
