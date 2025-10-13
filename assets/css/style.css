@@ -31,15 +31,21 @@ margin-left: 15px;
 }
 
 /* Target the UL specifically inside the .post-list div */
-.post-list ul {
+.post-list {
     padding-left: 0;
     padding-inline-start: 0;
     list-style: none;
 }
 
 /* Styles for LI items *within* the UL inside .post-list */
-.post-list ul li {
+.post-list li {
     display: flex;
     gap: .5em;
     align-items: baseline;
+	white-space: nowrap;
+}
+
+.post-list li a {
+    /* Allows the link text to wrap if it needs to */
+    white-space: normal; 
 }

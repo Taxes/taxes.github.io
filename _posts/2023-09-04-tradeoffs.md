@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Everything is Tradeoffs"
+slug: tradeoffs
+date:   2023-09-04
+published: true
+---
+
 # Everything is Tradeoffs
 
 Decision-making can be hard. Even seemingly innocuous choices come with a barrage of tradeoffs.
