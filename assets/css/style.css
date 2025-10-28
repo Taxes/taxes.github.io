@@ -1,30 +1,89 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+/* CSS Variables for theming */
+:root {
+	--bg-color: #EEE;
+	--text-color: #222;
+	--secondary-text-color: #444;
+	--border-color: #e8e8e8;
+	--theme-color: #eeeeee;
+}
+
+[data-theme="dark"] {
+	--bg-color: #1a1a1a;
+	--text-color: #e0e0e0;
+	--secondary-text-color: #b0b0b0;
+	--border-color: #333;
+	--theme-color: #1a1a1a;
+}
+
 /* Body */
 body {
-font-family: Helvetica, arial, sans-serif;
-color: #222;
-background-color: #EEE;
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+color: var(--text-color);
+background-color: var(--bg-color);
 margin: 2.5rem auto;
 max-width: 45rem;
 line-height: 1.6;
 font-size: min(calc(.88rem + 0.6vw),1.25rem);
 padding: 0 .9375rem;
+transition: background-color 0.3s ease, color 0.3s ease;
+font-feature-settings: 'kern' 1, 'liga' 1;
+-webkit-font-smoothing: antialiased;
+}
+
+/* Links */
+a {
+color: #0066cc;
+}
+
+a:visited {
+color: #0066cc;
+}
+
+[data-theme="dark"] a {
+color: #66b3ff;
+}
+
+[data-theme="dark"] a:visited {
+color: #66b3ff;
 }
 
 /* Headers */
 h1, h2, h3 {
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 line-height: 1.2;
+font-weight: 600;
+letter-spacing: -0.02em;
 }
 h1 {
-font-size: 2rem;
+font-size: 2.5rem;
+font-weight: 700;
 }
 h2 {
-font-size: 1.6rem;
+font-size: 2rem;
+}
+
+/* Site header */
+body > header h1 {
+font-size: 1.2rem;
+margin-bottom: 2rem;
+}
+
+body > header h1 a {
+color: var(--text-color);
+text-decoration: none;
+}
+
+body > header h1 a:visited {
+color: var(--text-color);
 }
 
 /** Blockquotes */
 blockquote {
-color: #444;
-border-left: 4px solid #e8e8e8;
+color: var(--secondary-text-color);
+border-left: 4px solid var(--border-color);
 padding-left: 15px;
 letter-spacing: -0.0px;
 margin-left: 15px;
@@ -39,13 +98,34 @@ margin-left: 15px;
 
 /* Styles for LI items *within* the UL inside .post-list */
 .post-list li {
-    display: flex;
-    gap: .5em;
-    align-items: baseline;
-	white-space: nowrap;
+    margin-bottom: 0.5rem;
 }
 
-.post-list li a {
-    /* Allows the link text to wrap if it needs to */
-    white-space: normal; 
+.post-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Post title wrapper */
+.post-title-wrapper {
+    margin-bottom: 0.25rem;
+}
+
+.post-title-wrapper a {
+    white-space: normal;
+    width: fit-content;
+    display: inline;
+}
+
+/* Post metadata wrapper */
+.post-meta-wrapper {
+    font-size: 0.8em;
+    color: var(--secondary-text-color);
+    line-height: 1;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    font-variant-numeric: tabular-nums;
+}
+
+/* Meta separators */
+.post-meta-separator {
+    margin: 0 0em;
 }

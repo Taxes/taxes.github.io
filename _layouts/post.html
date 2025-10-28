@@ -15,9 +15,46 @@ layout: default
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
+	{%- assign words = content | number_of_words -%}
+	{%- assign read_time = words | divided_by: 225 -%}
+	{%- if read_time < 1 -%}
+		{%- assign read_time = 1 -%}
+	{%- endif -%}
 	<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
         {{ page.date | date: date_format }}
-	</time>
+	</time> · {{ read_time }} min read
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+{%- if page.series -%}
+<div class="series-navigation">
+  <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+  {%- assign series_posts = site.posts | where: "series", page.series | sort: "series_order" -%}
+  {%- assign total_posts = series_posts.size -%}
+
+  <p style="margin-bottom: 0.5rem;">Part {{ page.series_order }} of {{ total_posts }} in "{{ page.series }}"</p>
+
+  <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+    <div>
+      {%- assign prev_order = page.series_order | minus: 1 -%}
+      {%- if prev_order > 0 -%}
+        {%- assign prev_post = series_posts | where: "series_order", prev_order | first -%}
+        {%- if prev_post -%}
+          <a href="{{ prev_post.url | relative_url }}">← {{ prev_post.title }}</a>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+    <div style="text-align: right;">
+      {%- assign next_order = page.series_order | plus: 1 -%}
+      {%- if next_order <= total_posts -%}
+        {%- assign next_post = series_posts | where: "series_order", next_order | first -%}
+        {%- if next_post -%}
+          <a href="{{ next_post.url | relative_url }}">{{ next_post.title }} →</a>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+{%- endif -%}

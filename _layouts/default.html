@@ -17,16 +17,55 @@
 	<link rel="manifest" href="/assets/favicons/site.webmanifest">
 	<link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#2d89ef">
-	<meta name="theme-color" content="#eeeeee">
+	<meta name="theme-color" content="#eeeeee" id="theme-color-meta">
+	<!-- Dark mode initialization (runs immediately to prevent flash) -->
+	<script>
+		(function() {
+			const stored = localStorage.getItem('theme');
+			const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const theme = stored || (prefersDark ? 'dark' : 'light');
+			document.documentElement.setAttribute('data-theme', theme);
+			document.getElementById('theme-color-meta').setAttribute('content', theme === 'dark' ? '#1a1a1a' : '#eeeeee');
+		})();
+	</script>
   </head>
   <body>
+    <header>
+      <h1><a href="{{ "/" | relative_url }}">ken's blog</a></h1>
+    </header>
     {{ content }}
   </body>
   <footer>
 	 <div style="text-align:center;display:block;">
-		<a href="index">Home</a> |
-		<a href="bio">About</a> |
-		<a href="{{ "/feed.xml" | relative_url }}">RSS</a>
+		<a href="{{ "/" | relative_url }}">Home</a> |
+		<a href="{{ "/bio" | relative_url }}">About</a> |
+		<a href="{{ "/feed.xml" | relative_url }}">RSS</a> |
+		<a href="#" id="theme-toggle">Dark mode</a>
 	 </div>
   </footer>
+  <!-- Dark mode toggle functionality -->
+  <script>
+	(function() {
+		const toggle = document.getElementById('theme-toggle');
+		const html = document.documentElement;
+		const metaTheme = document.getElementById('theme-color-meta');
+
+		function updateToggleText() {
+			const currentTheme = html.getAttribute('data-theme');
+			toggle.textContent = currentTheme === 'dark' ? 'Light mode' : 'Dark mode';
+		}
+
+		updateToggleText();
+
+		toggle.addEventListener('click', function(e) {
+			e.preventDefault();
+			const currentTheme = html.getAttribute('data-theme');
+			const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+			html.setAttribute('data-theme', newTheme);
+			localStorage.setItem('theme', newTheme);
+			metaTheme.setAttribute('content', newTheme === 'dark' ? '#1a1a1a' : '#eeeeee');
+			updateToggleText();
+		});
+	})();
+  </script>
 </html>

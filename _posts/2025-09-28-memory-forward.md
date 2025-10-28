@@ -5,6 +5,8 @@ slug: memory-intro
 date: 2025-09-28
 published: true
 tags: memory
+series: "Notes on memory"
+series_order: 1
 ---
 
 # Notes on memory: intro

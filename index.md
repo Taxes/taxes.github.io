@@ -11,13 +11,10 @@ You can reach me via [email](mailto:ken@knowingken.com).
 
 Sometimes I write about things that are interesting to me.
 
-<ul class="post-list" markdown="1">
+<ul class="post-list">
 {% for post in site.posts %}
 	{% if post.tags == empty or post.tags.size == 0 %}
-	<li>
-		{{ post.date | date: "%Y-%m" }}
-		<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-	</li>
+		{% include post-list-item.html post=post %}
 	{% endif %}
 {% endfor %}
 </ul>
@@ -26,13 +23,10 @@ Sometimes I write about things that are interesting to me.
 
 Learning about memory in public.
 
-<ul class="post-list" markdown="1">
+<ul class="post-list">
 {% for post in site.posts reversed %}
 	{% if post.tags contains 'memory' %}
-	<li>
-		{{ post.date | date: "%Y-%m" }}
-		<a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-	</li>
+		{% include post-list-item.html post=post %}
 	{% endif %}
 {% endfor %}
 </ul>
