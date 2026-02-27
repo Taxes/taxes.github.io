@@ -6,7 +6,7 @@
     <title>{{ page.title }}</title>
 	<link rel="stylesheet" href="/assets/css/style.css">
 	<!-- Analytics -->
-	{% if site.google_analytics and jekyll.environment == 'production' %}
+	{% if jekyll.environment == 'production' %}
 		{% include analytics.html %}
 	{% endif %}
 	<!-- Favicon -->
