@@ -16,7 +16,7 @@ layout: default
     {{ content }}
   </div>
 	{%- assign words = content | number_of_words -%}
-	{%- assign read_time = words | divided_by: 225 -%}
+	{%- assign read_time = words | divided_by: 200 -%}
 	{%- if read_time < 1 -%}
 		{%- assign read_time = 1 -%}
 	{%- endif -%}
