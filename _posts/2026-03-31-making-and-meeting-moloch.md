@@ -10,7 +10,7 @@ published: true
 
 *Game design, tradeoffs, and the pressure to make the numbers go up.*
 
-This is a reflection on the makings of [Project Basilisk](projectbasilisk.com), a short-ish game-ish experience about creating safe AGI in a world where being first is all that matters.
+This is a reflection on the makings of [Project Basilisk](https://projectbasilisk.com), a short-ish game-ish experience about creating safe AGI in a world where being first is all that matters.
 
 There's a moment that any creator or founder can recognize - the moment when their carefully-crafted idea makes contact with reality. Who budges? Certainly not reality, not unless your creation is large enough to change it. Most aren't.
 
