@@ -8,6 +8,8 @@ I want to make better products that increase marketplace efficiency and equip pe
 
 I am currently \[unemployed / solo stealth startup founder / independent AI researcher\].
 
+I am open to new opportunities, particularly with AI-first startups and labs.
+
 I've previously worked:
 * As a product lead for commercial banking intelligence at [Codat](https://codat.io), helping SMBs share their financial data to build stronger relationships with their banks.
 * As a product manager on multi-sided investment marketplaces at [iCapital](https://icapital.com/), with a focus on making alternative investments more accessible to everyday investors.
@@ -17,7 +19,7 @@ I've previously worked:
 
 When I'm not working, you can usually find me doing something related to one (or more) of the following:
 * [Reading](reading.md)
-* Writing
+* Writing (here)
 * [Poetry](poetry.md)
 * Looking for cheap eats
 * Board games, especially Eurogames

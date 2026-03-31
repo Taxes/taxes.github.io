@@ -19,7 +19,7 @@ Sometimes I write about things that are interesting to me.
 {% endfor %}
 </ul>
 
-## Notes on memory
+<!-- ## Notes on memory
 
 Learning about memory in public.
 
@@ -29,4 +29,4 @@ Learning about memory in public.
 		{% include post-list-item.html post=post %}
 	{% endif %}
 {% endfor %}
-</ul>
+</ul> -->
