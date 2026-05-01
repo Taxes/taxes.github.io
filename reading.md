@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /reading
+---
+
 # Reading List
 
 A list of books that I have read, am reading, or would like to read, in no particular order. Eventually, my hope is for this to become a book review list as well.
@@ -19,7 +24,6 @@ Standard disclaimer that the presence of a book on this list is not necessarily 
 * The Master and His Emissary (Iain McGilchrist)
 * Legal Systems Very Different From Ours (David Friedman)
 * Flow (Mihaly Csikszentmihalyi)
-* Dune (Frank Herbert)
 * Warfighting (A.M. Gray)
 * Finite and Infinite Games (James Carse)
 * Getting to Maybe (Richard Fischl and Jeremy Paul)
@@ -32,7 +36,15 @@ Standard disclaimer that the presence of a book on this list is not necessarily 
 * The Cult of Smart (Fredrik deBoer)
 * Remembrance of Things Past (Marcel Proust)
 
-## Tangentially related
+## Fiction
+* Stories of Your Life and Others (Ted Chiang)
+* Exhalation (Ted Chiang)
+* Axiomatic (Greg Egan)
+* The Word for World is Forest (Ursula K Le Guin)
+* Dune (Frank Herbert)
+* Labyrinths (Jorge Luis Borges)
+
+## Tangentially-related
 * Seeing Like a State (James Scott)
 * Rebellion, Rascals, and Revenue (Michael Keen, Joel Slembrod)
 * Governing Least (Dan Moller)

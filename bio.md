@@ -1,3 +1,8 @@
+---
+layout: default
+permalink: /bio
+---
+
 # About me
 
 ## Work

@@ -4,8 +4,7 @@ title:  "Hello"
 slug: index
 ---
 
-Hi, I'm Ken. I'm interested in the products and technologies that power commerce. You can read more [about me](/bio.md) or [about what I'm reading](/reading.md).
-You can reach me via [email](mailto:ken@knowingken.com).
+Hi, I'm Ken. I'm interested in the products and technologies that power commerce. You can read more [about me](/bio), [what I'm reading](/reading), or [what I'm thinking about](/half-baked). You can chat to me about any of those things, or anything else, via [email](mailto:ken@knowingken.com).
 
 ## Blog
 
