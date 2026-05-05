@@ -1,14 +1,12 @@
 ---
 layout: post
 title:  "Vibe-coding ants"
+subtitle: "Ants, assembly, and local optima."
 slug: vibe-coding-ants
 date:   2026-03-16
 published: true
+toc: true
 ---
-
-# Vibe-coding ants
-
-*Ants, assembly, and local optima.*
 
 [Moment](https://moment.com/) recently held a wonderfully fun programming challenge:
 > You write a program in a custom assembly-like (we call it ant-ssembly) instruction set that controls 200 ants. Each ant can sense nearby cells (food, pheromones, home, other ants) but has no global view. The only coordination mechanism is pheromone trails, which ants can emit and sense them, but that's it. Your program runs identically on every ant.

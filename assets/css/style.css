@@ -137,3 +137,132 @@ margin-left: 15px;
     max-width: 100%;
     height: auto;
 }
+
+/* Strip the first child's top margin so post content sits flush with TOC top */
+.post-content > *:first-child {
+    margin-top: 0;
+}
+
+/* === Post layout shell (title row + TOC | content | sidenotes) === */
+
+/* Default (narrow): single column. Source order is title → toc → article. */
+.post-shell {
+    display: block;
+}
+.post-title-block {
+    margin-bottom: 1.5rem;
+}
+.post-title-block h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.post-subtitle {
+    font-style: italic;
+    color: var(--secondary-text-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.toc-aside {
+    margin-bottom: 2rem;
+}
+
+/* Wide screens: title row spans col 2; TOC + body share row 2; sidenotes float into col 3 */
+@media (min-width: 1100px) {
+    body:has(.post-shell) {
+        max-width: 80rem;
+    }
+    .post-shell {
+        display: grid;
+        grid-template-columns: 14rem minmax(0, 45rem) 14rem;
+        grid-template-areas:
+            ".   title ."
+            "toc body  .";
+        column-gap: 2rem;
+        align-items: start;
+        justify-content: center;
+    }
+    .post-shell > .post-title-block { grid-area: title; }
+    .post-shell > .toc-aside {
+        grid-area: toc;
+        position: sticky;
+        top: 2rem;
+        margin-bottom: 0;
+    }
+    .post-shell > .post {
+        grid-area: body;
+        min-width: 0;
+    }
+    /* Column 3 is reserved space; sidenotes float into it via negative margin */
+
+    /* Align the site header with the post column on wide post pages */
+    body:has(.post-shell) > header {
+        display: grid;
+        grid-template-columns: 14rem minmax(0, 45rem) 14rem;
+        column-gap: 2rem;
+        justify-content: center;
+    }
+    body:has(.post-shell) > header > * {
+        grid-column: 2;
+        margin-top: 0;
+    }
+}
+
+/* === TOC styling === */
+.toc {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+.toc-title {
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--secondary-text-color);
+    margin: 0 0 0.5rem 0;
+}
+.toc-list {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+.toc-list li {
+    margin-bottom: 0.3rem;
+}
+.toc-list a,
+.toc-list a:visited {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+.toc-list a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+
+/* === Sidenotes === */
+/* Default: hidden inline span; bottom endnotes shown as fallback */
+.sidenote {
+    display: none;
+}
+
+@media (min-width: 1100px) {
+    .sidenote {
+        display: block;
+        float: right;
+        clear: right;
+        width: 14rem;
+        margin-right: -16rem;
+        margin-left: 1rem;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 0.8rem;
+        line-height: 1.45;
+        color: var(--secondary-text-color);
+    }
+    .sidenote-num {
+        font-weight: 600;
+        margin-right: 0.15rem;
+    }
+    /* When sidenotes are visible, hide the bottom endnotes block */
+    .post-content .footnotes {
+        display: none;
+    }
+}

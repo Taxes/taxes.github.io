@@ -1,14 +1,12 @@
 ---
 layout: post
 title:  "Making and meeting Moloch"
+subtitle: "Game design, tradeoffs, and the pressure to make the numbers go up."
 slug: making-and-meeting-moloch
 date:   2026-03-31
 published: true
+toc: true
 ---
-
-# Making and meeting Moloch
-
-*Game design, tradeoffs, and the pressure to make the numbers go up.*
 
 This is a reflection on the makings of [Project Basilisk](https://projectbasilisk.com), a short-ish game-ish experience about creating safe AGI in a world where being first is all that matters.
 

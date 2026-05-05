@@ -1,60 +1,82 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <!-- <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1> -->
-    <p class="post-meta">
-      
-      {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+<div class="post-shell">
+  <header class="post-title-block">
+    <h1>{{ page.title }}</h1>
+    {%- if page.subtitle -%}
+      <p class="post-subtitle"><em>{{ page.subtitle }}</em></p>
+    {%- endif -%}
   </header>
+  {%- assign h2_count = content | split: '<h2 ' | size | minus: 1 -%}
+  {%- if page.toc == false -%}
+    {%- assign show_toc = false -%}
+  {%- elsif page.toc == true -%}
+    {%- assign show_toc = true -%}
+  {%- elsif h2_count >= 3 -%}
+    {%- assign show_toc = true -%}
+  {%- else -%}
+    {%- assign show_toc = false -%}
+  {%- endif -%}
+  {%- if show_toc -%}
+    <aside class="toc-aside">
+      {%- include toc.html content=content -%}
+    </aside>
+  {%- endif -%}
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
-  </div>
-	{%- assign words = content | number_of_words -%}
-	{%- assign read_time = words | divided_by: 200 -%}
-	{%- if read_time < 1 -%}
-		{%- assign read_time = 1 -%}
-	{%- endif -%}
-	<time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-	</time> · {{ read_time }} min read
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
-</article>
+    {%- if page.author -%}
+    <header class="post-header">
+      <p class="post-meta">
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      </p>
+    </header>
+    {%- endif -%}
 
-{%- if page.series -%}
-<div class="series-navigation">
-  <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
-
-  {%- assign series_posts = site.posts | where: "series", page.series | sort: "series_order" -%}
-  {%- assign total_posts = series_posts.size -%}
-
-  <p style="margin-bottom: 0.5rem;">Part {{ page.series_order }} of {{ total_posts }} in "{{ page.series }}"</p>
-
-  <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
-    <div>
-      {%- assign prev_order = page.series_order | minus: 1 -%}
-      {%- if prev_order > 0 -%}
-        {%- assign prev_post = series_posts | where: "series_order", prev_order | first -%}
-        {%- if prev_post -%}
-          <a href="{{ prev_post.url | relative_url }}">← {{ prev_post.title }}</a>
-        {%- endif -%}
-      {%- endif -%}
+    <div class="post-content e-content" itemprop="articleBody">
+      {%- include sidenotes.html content=content -%}
     </div>
-    <div style="text-align: right;">
-      {%- assign next_order = page.series_order | plus: 1 -%}
-      {%- if next_order <= total_posts -%}
-        {%- assign next_post = series_posts | where: "series_order", next_order | first -%}
-        {%- if next_post -%}
-          <a href="{{ next_post.url | relative_url }}">{{ next_post.title }} →</a>
-        {%- endif -%}
-      {%- endif -%}
+    {%- assign words = content | number_of_words -%}
+    {%- assign read_time = words | divided_by: 200 -%}
+    {%- if read_time < 1 -%}
+      {%- assign read_time = 1 -%}
+    {%- endif -%}
+    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+    </time> · {{ read_time }} min read
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+    {%- if page.series -%}
+    <div class="series-navigation">
+      <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 2rem 0;">
+
+      {%- assign series_posts = site.posts | where: "series", page.series | sort: "series_order" -%}
+      {%- assign total_posts = series_posts.size -%}
+
+      <p style="margin-bottom: 0.5rem;">Part {{ page.series_order }} of {{ total_posts }} in "{{ page.series }}"</p>
+
+      <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+        <div>
+          {%- assign prev_order = page.series_order | minus: 1 -%}
+          {%- if prev_order > 0 -%}
+            {%- assign prev_post = series_posts | where: "series_order", prev_order | first -%}
+            {%- if prev_post -%}
+              <a href="{{ prev_post.url | relative_url }}">← {{ prev_post.title }}</a>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+        <div style="text-align: right;">
+          {%- assign next_order = page.series_order | plus: 1 -%}
+          {%- if next_order <= total_posts -%}
+            {%- assign next_post = series_posts | where: "series_order", next_order | first -%}
+            {%- if next_post -%}
+              <a href="{{ next_post.url | relative_url }}">{{ next_post.title }} →</a>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+      </div>
     </div>
-  </div>
+    {%- endif -%}
+  </article>
 </div>
-{%- endif -%}

@@ -1,0 +1,22 @@
+{%- comment -%}
+  toc.html — generate a table of contents from H2 headings in content.
+  Usage: {% include toc.html content=content %}
+  Renders nothing if there are no H2s.
+{%- endcomment -%}
+{%- assign source = include.content -%}
+{%- assign chunks = source | split: '<h2 id="' -%}
+{%- if chunks.size > 1 -%}
+<nav class="toc" aria-label="Table of contents">
+  <p class="toc-title">Contents</p>
+  <ol class="toc-list">
+  {%- for chunk in chunks -%}
+    {%- if forloop.first -%}{%- continue -%}{%- endif -%}
+    {%- assign id = chunk | split: '"' | first -%}
+    {%- assign rest = chunk | split: '">' -%}
+    {%- if rest.size < 2 -%}{%- continue -%}{%- endif -%}
+    {%- assign heading = rest[1] | split: '</h2>' | first -%}
+    <li><a href="#{{ id }}">{{ heading }}</a></li>
+  {%- endfor -%}
+  </ol>
+</nav>
+{%- endif -%}

@@ -1,0 +1,29 @@
+{%- comment -%}
+  sidenotes.html — splice kramdown footnotes inline as Tufte-style sidenotes.
+  Usage: {% include sidenotes.html content=content %}
+  Wide screens render the inline span in the right gutter (CSS handles layout).
+  Narrow screens hide the inline span and fall back to the bottom endnotes.
+{%- endcomment -%}
+{%- assign rendered = include.content -%}
+{%- if rendered contains '<div class="footnotes"' -%}
+  {%- assign parts = rendered | split: '<div class="footnotes"' -%}
+  {%- assign main_body = parts[0] -%}
+  {%- assign footer_html = '<div class="footnotes"' | append: parts[1] -%}
+  {%- assign li_pieces = parts[1] | split: '<li id="fn:' -%}
+  {%- for piece in li_pieces -%}
+    {%- if forloop.first -%}{%- continue -%}{%- endif -%}
+    {%- assign n = piece | split: '"' | first -%}
+    {%- assign after_open = piece | split: 'role="doc-endnote">' -%}
+    {%- if after_open.size < 2 -%}{%- continue -%}{%- endif -%}
+    {%- assign body_part = after_open[1] | split: '</li>' | first -%}
+    {%- assign back_anchor = '<a href="#fnref:' | append: n -%}
+    {%- assign note_inner = body_part | split: back_anchor | first -%}
+    {%- assign note_inner = note_inner | replace: '</p>', '<br/><br/>' | replace: '<p>', '' | strip -%}
+    {%- assign ref_needle = '<sup id="fnref:' | append: n | append: '" role="doc-noteref"><a href="#fn:' | append: n | append: '" class="footnote" rel="footnote">' | append: n | append: '</a></sup>' -%}
+    {%- assign ref_replacement = ref_needle | append: '<span class="sidenote"><span class="sidenote-num">' | append: n | append: '. </span>' | append: note_inner | append: '</span>' -%}
+    {%- assign main_body = main_body | replace: ref_needle, ref_replacement -%}
+  {%- endfor -%}
+{{ main_body }}{{ footer_html }}
+{%- else -%}
+{{ rendered }}
+{%- endif -%}

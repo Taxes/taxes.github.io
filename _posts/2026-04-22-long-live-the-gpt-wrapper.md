@@ -1,14 +1,11 @@
 ---
 layout: post
 title: "The GPT wrapper is dead. Long live the GPT wrapper."
+subtitle: "Agentic harnesses didn't just fall out of a coconut tree."
 slug: long-live-the-gpt-wrapper
 date: 2026-04-22
 published: true
 ---
-
-# The GPT wrapper is dead. Long live the GPT wrapper.
-
-*Agentic harnesses didn't just fall out of a coconut tree.*
 
 ![](/assets/images/wrapper-harness-same-picture.jpg)
 

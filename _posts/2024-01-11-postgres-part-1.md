@@ -6,8 +6,6 @@ date:   2024-01-11
 published: true
 ---
 
-# Postgres performance - a deep-dive on how poor statistics affect join strategies.
-
 **Summary:**
 * The Postgres query planner can produce query plans with much longer runtimes than optimal due to poor choice of join methods.
 * One reason the planner chooses non-optimal join methods is by underestimating the results of previous joins, an error that compounds in more complex queries with multiple joins.

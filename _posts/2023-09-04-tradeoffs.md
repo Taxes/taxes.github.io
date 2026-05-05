@@ -6,8 +6,6 @@ date:   2023-09-04
 published: true
 ---
 
-# Everything is Tradeoffs
-
 Decision-making can be hard. Even seemingly innocuous choices come with a barrage of tradeoffs.
 At a fundamental level, every choice you make has an opportunity cost: all of the other choices you could have made that are incompatible with your current choice.
 Even the time and energy spent making a decision is a cost.

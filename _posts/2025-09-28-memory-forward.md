@@ -9,8 +9,6 @@ series: "Notes on memory"
 series_order: 1
 ---
 
-# Notes on memory: intro
-
 Welcome to my notes on memory, where I make an effort to understand memory, its effects on our person and our society, and implications for the development of artificial intelligence.
 
 Why write about memory? 
