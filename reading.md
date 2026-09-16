@@ -19,9 +19,6 @@ Standard disclaimer that the presence of a book on this list is not necessarily 
 * A.M. Gray - Warfighting
 * James Carse - Finite and Infinite Games
 * Richard Fischl and Jeremy Paul - Getting to Maybe
-* Joseph Tainter - The Collapse of Complex Societies
-* William Stuntz - The Collapse of American Criminal Justice
-* Peter Leeson - The Invisible Hook
 
 ### Back to school (or not)
 * John Holt - How Children Fail
@@ -73,8 +70,11 @@ Standard disclaimer that the presence of a book on this list is not necessarily 
 * David Friedman - The Machinery of Freedom; Legal Systems Very Different From Ours
 * Henry George - Progress and Poverty
 * David Maister - Managing the Professional Service Firm
+* Joseph Tainter - The Collapse of Complex Societies
+* William Stuntz - The Collapse of American Criminal Justice
+* Peter Leeson - The Invisible Hook
 
-### Markets, etc.
+### Markets et cetera
 * Daniel Davies - Lying for Money
 * Alvin Roth - Who Gets What and Why
 * Abhijit Banerjee and Ester Buflo - Poor Economics
