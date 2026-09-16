@@ -10,67 +10,96 @@ A list of books that I have read, am reading, or would like to read, in no parti
 
 Standard disclaimer that the presence of a book on this list is not necessarily an endorsement of any ideas contained within said book. Non-standard disclaimer that the presence of a book on this list probably signals that it's pretty interesting.
 
-## Miscellaneous
-* Impro: Improvisation and the Theatre (Keith Johnstone)
-* McNamara's Folly (Hamilton Gregory)
-* Godel, Escher, Bach: an Eternal Golden Braid (Douglas Hofstadter)
-* Progress and Poverty (Henry George)
-* The Party (Richard McGregor)
-* The Age of Entitlement (Christopher Caldwell)
-* Class (Paul Fussell)
-* The 99% Invisible City (Kurt Kohlstedt, Roman Mars)
-* Pimp (Iceberg Slim)
-* Talent (Tyler Cowen)
-* Metaphors We Live By (George Lakoff)
-* The Master and His Emissary (Iain McGilchrist)
-* Legal Systems Very Different From Ours (David Friedman)
-* Flow (Mihaly Csikszentmihalyi)
-* Warfighting (A.M. Gray)
-* Finite and Infinite Games (James Carse)
-* Getting to Maybe (Richard Fischl and Jeremy Paul)
-* Intellectuals and Society (Thomas Sowell)
-* How Children Fail (John Holt)
-* Moral Mazes (Robert Jackall)
-* The Power Broker (Robert Moses)
-* The Collapse of Complex Societies (Joseph Tainter)
-* The Educated Mind (Kieran Egan)
-* The Cult of Smart (Fredrik deBoer)
-* Remembrance of Things Past (Marcel Proust)
+### Miscellaneous
+* Douglas Hofstadter - Godel, Escher, Bach: an Eternal Golden Braid
+* Christopher Caldwell - The Age of Entitlement
+* George Lakoff - Metaphors We Live By
+* Iain McGilchrist - The Master and His Emissary
+* Mihaly Csikszentmihalyi - Flow
+* A.M. Gray - Warfighting
+* James Carse - Finite and Infinite Games
+* Richard Fischl and Jeremy Paul - Getting to Maybe
+* Joseph Tainter - The Collapse of Complex Societies
+* William Stuntz - The Collapse of American Criminal Justice
+* Peter Leeson - The Invisible Hook
 
-## Fiction
-* Stories of Your Life and Others (Ted Chiang)
-* Exhalation (Ted Chiang)
-* Axiomatic (Greg Egan)
-* The Word for World is Forest (Ursula K Le Guin)
-* Dune (Frank Herbert)
-* Labyrinths (Jorge Luis Borges)
+### Back to school (or not)
+* John Holt - How Children Fail
+* Kieran Egan - The Educated Mind
+* Fredrik deBoer - The Cult of Smart
+* Bryan Caplan - The Case Against Education
 
-## Tangentially-related
-* Seeing Like a State (James Scott)
-* Rebellion, Rascals, and Revenue (Michael Keen, Joel Slembrod)
-* Governing Least (Dan Moller)
-* The Machinery of Freedom (David Friedman)
-* Order Without Law (Robert Ellickson)
-* Thinking in Systems (Donella Meadows)
-* An Introduction to General Systems Thinking (Gerald Weinberg)
-* Lying for Money (Daniel Davies)
-* Poor Economics (Abhijit Banerjee and Ester Buflo)
-* Who Gets What and Why (Alvin Roth)
-* Incerto series (Nassim Taleb)
-* How Markets Fail (John Cassidy)
-* The Laws of Trading (Agustin Lebron)
-* Thinking in Bets (Annie Duke)
-* Liar's Poker (Michael Lewis)
+### Keeping things classy
+* Paul Fussell - Class
+* Pierre Bourdieu - Distinction
+* Keith Johnstone - Impro: Improvisation and the Theatre
+* Thomas Sowell - Intellectuals and Society
+* Robert Jackall - Moral Mazes
+* Robin Hanson - The Elephant in the Brain
 
-## Practical
-* Radical Candor (Kim Scott)
-* The Design of Everyday Things (Don Norman)
-* The Hard Thing About Hard Things (Ben Horowitz)
-* Zero to One (Peter Thiel)
-* Managing Humans (Michael Lopp)
-* Product Management in Practice (Matt Lemay)
-* Using Scenarios (Thomas Chermack)
-* Team Topologies (Matthew Skelton, Manual Pais)
-* Switch (Chip & Dan Heath)
-* The Scout Mindset (Julia Galef)
-* Managing the Professional Service Firm (David Maister)
+### Mostly nonfictional
+* Hamilton Gregory - McNamara's Folly
+* Iceberg Slim - Pimp
+* Robert Moses - The Power Broker
+* Richard McGregor - The Party
+
+### Slightly less nonfictional
+* Frank Herbert - Dune
+* Marcel Proust - Remembrance of Things Past
+* Greg Egan - Axiomatic
+* Ted Chiang - Stories of Your Life and Others; Exhalation
+* Ken Liu - The Paper Menagerie; The Hidden Girl
+* Ursula K LeGuin - everything, but especially the Hainish Cycle & The Dispossessed
+* Jorge Luis Borges - Labyrinths
+* Iain M. Banks - The Player of Games (and the rest of the Culture series)
+* China Mieville - Embassytown; The City & The City
+* Vernor Vinge - A Fire Upon the Deep
+
+### Memory-related
+* Sven Bernecker, Kourken Michaelian - The Routledge Handbook of Philosophy of Memory
+* Plato - Theaetetus
+* Aristotle - De Memoria et Reminiscentia
+* Locke - An Essay Concerning Human Understanding
+* Maurice Halbwachs - On Collective Memory
+* Paul Connerton - How Societies Remember
+
+### Somehow related
+* James Scott - Seeing Like a State
+* Michael Keen, Joel Slembrod - Rebellion, Rascals, and Revenue
+* Dan Moller - Governing Least
+* Robert Ellickson - Order Without Law
+* Richard Posner - How Judges Think
+* Albert Hirschman - Exit, Voice, and Loyalty
+* David Friedman - The Machinery of Freedom; Legal Systems Very Different From Ours
+* Henry George - Progress and Poverty
+* David Maister - Managing the Professional Service Firm
+
+### Markets, etc.
+* Daniel Davies - Lying for Money
+* Alvin Roth - Who Gets What and Why
+* Abhijit Banerjee and Ester Buflo - Poor Economics
+* Nassim Taleb - Incerto series
+* John Cassidy - How Markets Fail
+* Agustin Lebron - The Laws of Trading
+* Annie Duke - Thinking in Bets
+* Michael Lewis - Liar's Poker
+
+### Practical?
+* Kim Scott - Radical Candor
+* Ben Horowitz - The Hard Thing About Hard Things
+* Peter Thiel - Zero to One
+* Michael Lopp - Managing Humans
+* Matt Lemay - Product Management in Practice
+* Matthew Skelton, Manual Pais - Team Topologies
+* Chip & Dan Heath - Switch
+* Julia Galef - The Scout Mindset
+* Tyler Cowen - Talent
+
+### Systems
+* Donella Meadows - Thinking in Systems
+* Gerald Weinberg - An Introduction to General Systems Thinking
+* Thomas Chermack - Using Scenarios
+
+### Design
+* Kurt Kohlstedt, Roman Mars - The 99% Invisible City
+* Don Norman - The Design of Everyday Things
