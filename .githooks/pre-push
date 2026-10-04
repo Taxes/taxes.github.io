@@ -1,0 +1,20 @@
+#!/bin/sh
+# Run pre-release site checks before deploying to the public remote.
+# Checks the commit being pushed (not the working tree) in a temporary worktree.
+# Enable once per clone: git config core.hooksPath .githooks
+# Bypass in an emergency: git push --no-verify public dev:gh-pages
+
+[ "$1" = "public" ] || exit 0
+
+zero=0000000000000000000000000000000000000000
+status=0
+while read -r local_ref local_sha remote_ref remote_sha; do
+	[ "$local_sha" = "$zero" ] && continue # deleting a remote branch
+
+	tree="$(mktemp -d)/site"
+	git worktree add --quiet --detach "$tree" "$local_sha" || exit 1
+	echo "Checking $local_ref ($(git rev-parse --short "$local_sha"))..."
+	(cd "$tree" && bundle exec ruby scripts/check-site.rb) || status=1
+	git worktree remove --force "$tree"
+done
+exit $status

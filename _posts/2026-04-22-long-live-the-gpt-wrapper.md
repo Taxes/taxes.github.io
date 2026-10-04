@@ -7,7 +7,7 @@ date: 2026-04-22
 published: true
 ---
 
-![](/assets/images/wrapper-harness-same-picture.jpg)
+![meme](/assets/images/wrapper-harness-same-picture.jpg)
 
 The death of the GPT wrapper has been greatly exaggerated. Modern harnesses are just GPT wrappers rebranded.
 

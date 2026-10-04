@@ -1,3 +1,10 @@
+---
+layout: default
+title: "In a Disused Graveyard"
+description: "Robert Frost's \"In a Disused Graveyard\" as a poem about things outliving their purpose. Plus a significantly cheesier take on software."
+permalink: /in-a-disused-graveyard
+---
+
 # In a Disused Graveyard
 
 Robert Frost

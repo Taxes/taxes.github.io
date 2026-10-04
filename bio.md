@@ -1,10 +1,13 @@
 ---
 layout: default
 title: "About me"
+description: "Hi! I'm Ken Han, a product person connoting in New York. Previously fintech and payments at Codat, iCapital, and J.P. Morgan."
 permalink: /bio
 ---
 
 # About me
+
+Hi! I'm Ken Han, a product person connoting in New York.
 
 ## Work
 
@@ -41,3 +44,5 @@ I have a soft spot for Manchester, England, where I spent a semester being a stu
 
 I studied accounting at the University of Minnesota.
 I like accounting because I am interested in numbers, rules, and the design of frameworks and mechanisms to capture truthy, quantifiable, and useful representations of complex economic situations while being implemented by entities with a wide range of interests and incentives. Unsurprisingly, I also have interests in law and economics.
+
+Elsewhere: [LinkedIn](https://www.linkedin.com/in/ken-han-501177113/) · [GitHub](https://github.com/Taxes)

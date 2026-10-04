@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Tags
+description: "Posts on Knowing Ken, grouped by tag."
 permalink: /tags/
 ---
 

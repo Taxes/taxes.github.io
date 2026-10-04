@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Everything is Tradeoffs"
+description: "Every choice has an opportunity cost, even putting on underwear before pants. Be suspicious of anything that seems to have none."
 slug: tradeoffs
 date:   2023-09-04
 published: true
@@ -14,7 +15,7 @@ Even the time and energy spent making a decision is a cost.
 
 Why might this be non-obvious, particularly when applied across all the choices we make in a day?
 Many times, the problem is relatively inconsequential, so picking a random point reasonably near the Pareto frontier is fine, and you can quickly discard most options because they are strictly worse.
-With more important decisions, it's possible to quickly narrow down the relevant tradeoffs by using heuristics such as values and principles (assuming your [values are useful](values.md)).
+With more important decisions, it's possible to quickly narrow down the relevant tradeoffs by using heuristics such as values and principles (assuming your [values are useful](/values)).
 Only a very small subset of decisions make it to the stage where we consciously consider the tradeoffs involved.
 
 ## Awareness of tradeoffs is a superpower.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Postgres performance: how poor statistics affect join strategies"
+description: "Why Postgres thinks only ~1,670 people live in both New York and zip code 10001, and what that does to your joins."
 slug: postgres-part-1
 date:   2024-01-11
 published: true

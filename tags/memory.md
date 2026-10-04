@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Tag: memory"
+description: "Notes on memory: what it is, how it shapes people and societies, and what it means for AI."
 permalink: /tags/memory/
 ---
 

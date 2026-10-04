@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Dust of Snow"
+description: "Robert Frost's \"Dust of Snow\", and how down days can be saved by mundane moments. Or: how to be someone's crow for a day."
+permalink: /dust-of-snow
+---
+
 # Dust of Snow
 
 Robert Frost

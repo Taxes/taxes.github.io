@@ -1,6 +1,7 @@
 ---
 layout: home
 title:  "Hello"
+description: "Ken Han writes about AI, product, payments, and markets. Also: a reading list, half-baked ideas, and the occasional poem."
 slug: index
 ---
 

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+	{% include head-meta.html %}
 	<link rel="stylesheet" href="/assets/css/style.css">
 	<!-- Analytics -->
 	{% if jekyll.environment == 'production' %}
@@ -31,7 +32,8 @@
   </head>
   <body>
     <header>
-      <h1><a href="{{ "/" | relative_url }}">ken's blog</a></h1>
+      {%- if page.url == "/" -%}{%- assign site_title_tag = "h1" -%}{%- else -%}{%- assign site_title_tag = "p" -%}{%- endif %}
+      <{{ site_title_tag }} class="site-title"><a href="{{ "/" | relative_url }}">ken's blog</a></{{ site_title_tag }}>
     </header>
     {{ content }}
   </body>

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Reading List"
+description: "Books I've read, am reading, or would like to read. Not necessarily endorsements, but probably pretty interesting."
 permalink: /reading
 ---
 

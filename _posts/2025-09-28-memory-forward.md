@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Notes on memory: introduction"
+description: "Why I think memory is AI's next great frontier, and why its hardest problems are conceptual, not technical. The first of my notes on memory."
 slug: memory-intro
 date: 2025-09-28
 published: true

@@ -20,10 +20,11 @@
 
 title: Knowing Ken
 email: 
+author: Ken Han
 description: >- # this means to ignore newlines until "baseurl:"
-  Ken's blog
+  Ken Han writes about AI, product, payments, and markets.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.knowingken.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://knowingken.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
 github_username:  
 
@@ -31,6 +32,7 @@ github_username:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-titles-from-headings
   
 titles_from_headings:
@@ -53,6 +55,9 @@ permalink: /:slug
 #
 exclude:
   - agents.md
+  - scripts/
+  - WORKFLOW.md
+  - bash.exe.stackdump
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

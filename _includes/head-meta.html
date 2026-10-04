@@ -1,0 +1,62 @@
+{%- comment -%} SEO / AEO metadata: description, canonical, Open Graph, JSON-LD. {%- endcomment -%}
+{%- assign base = site.url -%}
+{%- assign canonical = page.url | replace: "index.html", "" | prepend: base -%}
+{%- assign desc = page.description | default: page.subtitle | default: site.description | strip_html | normalize_whitespace | truncate: 160 -%}
+{%- if page.layout == "post" -%}{%- assign og_type = "article" -%}{%- else -%}{%- assign og_type = "website" -%}{%- endif -%}
+	<meta name="description" content="{{ desc | escape_once }}">
+	<meta name="author" content="{{ site.author }}">
+	{%- if page.url == "/404.html" %}
+	<meta name="robots" content="noindex">
+	{%- else %}
+	<link rel="canonical" href="{{ canonical }}">
+	<meta property="og:url" content="{{ canonical }}">
+	{%- endif %}
+	<meta property="og:title" content="{{ page.title | escape }}">
+	<meta property="og:description" content="{{ desc | escape_once }}">
+	<meta property="og:type" content="{{ og_type }}">
+	<meta property="og:site_name" content="{{ site.title | escape }}">
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@graph": [
+			{
+				"@type": "Person",
+				"@id": "{{ base }}/#ken",
+				"name": "Ken Han",
+				"alternateName": "Ken",
+				"url": "{{ base }}/bio",
+				"homeLocation": { "@type": "Place", "name": "New York, NY" },
+				"alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Minnesota" },
+				"sameAs": [
+					"https://www.linkedin.com/in/ken-han-501177113/",
+					"https://github.com/Taxes"
+				]
+			},
+			{
+				"@type": "WebSite",
+				"@id": "{{ base }}/#website",
+				"name": {{ site.title | jsonify | replace: "<", "\u003c" }},
+				"url": "{{ base }}/",
+				"author": { "@id": "{{ base }}/#ken" }
+			}
+			{%- if page.layout == "post" -%},
+			{
+				"@type": "BlogPosting",
+				"headline": {{ page.title | jsonify | replace: "<", "\u003c" }},
+				"description": {{ desc | jsonify | replace: "<", "\u003c" }},
+				"datePublished": "{{ page.date | date_to_xmlschema }}",
+				"url": "{{ canonical }}",
+				"mainEntityOfPage": "{{ canonical }}",
+				"author": { "@id": "{{ base }}/#ken" },
+				"isPartOf": { "@id": "{{ base }}/#website" }
+			}
+			{%- elsif page.url == "/bio" -%},
+			{
+				"@type": "ProfilePage",
+				"url": "{{ canonical }}",
+				"mainEntity": { "@id": "{{ base }}/#ken" }
+			}
+			{%- endif %}
+		]
+	}
+	</script>

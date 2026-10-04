@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Half-baked ideas"
+description: "Questions I'd love to talk about, from whether AI can have taste to why LLM writing grates. Minimal due diligence."
 permalink: /half-baked
 ---
 

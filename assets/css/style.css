@@ -66,17 +66,22 @@ font-size: 2rem;
 }
 
 /* Site header */
-body > header h1 {
+body > header .site-title {
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+line-height: 1.2;
+font-weight: 700;
+letter-spacing: -0.02em;
 font-size: 1.2rem;
+margin-top: 0.67em;
 margin-bottom: 2rem;
 }
 
-body > header h1 a {
+body > header .site-title a {
 color: var(--text-color);
 text-decoration: none;
 }
 
-body > header h1 a:visited {
+body > header .site-title a:visited {
 color: var(--text-color);
 }
 

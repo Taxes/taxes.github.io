@@ -57,6 +57,11 @@ bundle exec jekyll serve    # Start local server at http://localhost:4000
 - Changes pushed to `gh-pages` go live within minutes
 - No manual build/deploy steps required
 
+**Pre-release checks:**
+- `bundle exec ruby scripts/check-site.rb` builds the site and checks links, images, metadata, and post front matter; add `--external` to also check outside links
+- A pre-push hook (`.githooks/pre-push`) runs it on every push to `public`; enable it once per clone with `git config core.hooksPath .githooks`
+- Deploy only once it passes; fix each error at its source
+
 ## Jekyll Conventions
 
 **Front Matter:**
@@ -65,6 +70,7 @@ All pages and posts require YAML front matter at the top:
 ---
 layout: default    # or 'home', 'post', etc.
 title: "Page Title"
+description: "Search/link-preview blurb, under 160 chars" # Posts with a subtitle can omit it
 slug: page-slug    # Used for permalinks
 tags: [tag1, tag2] # Optional, used for filtering
 ---

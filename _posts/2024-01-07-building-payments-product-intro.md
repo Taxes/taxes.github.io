@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Building a payments product: introduction"
+description: "Payments are just moving money from one place to another, right? How hard can it be?"
 slug: building-payments-product-intro
 date:   2024-01-07
 published: true

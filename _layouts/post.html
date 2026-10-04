@@ -23,17 +23,17 @@ layout: default
       {%- include toc.html content=content -%}
     </aside>
   {%- endif -%}
-  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <article class="post h-entry">
 
     {%- if page.author -%}
     <header class="post-header">
       <p class="post-meta">
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        • <span class="p-author h-card">{{ page.author }}</span>
       </p>
     </header>
     {%- endif -%}
 
-    <div class="post-content e-content" itemprop="articleBody">
+    <div class="post-content e-content">
       {%- include sidenotes.html content=content -%}
     </div>
     {%- assign words = content | number_of_words -%}
@@ -41,7 +41,7 @@ layout: default
     {%- if read_time < 1 -%}
       {%- assign read_time = 1 -%}
     {%- endif -%}
-    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
           {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
           {{ page.date | date: date_format }}
     </time> · {{ read_time }} min read
